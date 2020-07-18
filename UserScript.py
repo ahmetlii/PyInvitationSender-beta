@@ -19,7 +19,7 @@ time.sleep (3)
 print ("Are you sure? It will send the invitations in next step? (y/n)")
 while True:  # making a loop
     try:  # used try so that if user pressed other than the given key error will not be shown
-        if keyboard.is_pressed('y'):  # if key 'q' is pressed 
+        if keyboard.is_pressed('y'):  # if key 'y' is pressed 
             print("Write only the page's interwiki link, don't add [[]]")
             input (link)
     except keyboard.is_pressed('n'):
