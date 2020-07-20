@@ -26,7 +26,7 @@ print ("Are you sure? It will send the invitations in next step. Please check li
 keyboard.wait("y")
 print("Write the page exactly that you want to invite")
 input(link)      
-contents += "==Discussion Invitation== \n {{Discussion Invitation|"+link+"}} \n If you don't want to take invitations automatically, please contact with the [[User:"+username+"|editor]] or the [[User:Ahmetlii|programmer]]."
-summary = "Sent an invitation with [[User:Ahmetlii/UserScript|UserScript]]"
+contents += "==Discussion Invitation== \n {{Discussion Invitation|"+link+"}} \n If you don't want to take invitations automatically, please contact with the [[User talk:"+username+"|"username"]] for invitations or the [[User:Ahmetlii|programmer]] for errors."
+summary = "Sent an invitation with [[User:Ahmetlii/PyUserScript|PyUserScript]]"
 print("Invitations sent by autoscript. Please exit from the terminal.")
 time.sleep(3)
