@@ -1,11 +1,5 @@
 
-A really simple MediaWiki API client.
-
-Can use most MediaWiki API modules.
-
-Requires ``requests`` and ''mwparserfromhell'' libraries.
-
-http://www.mediawiki.org/
+Simple multi-message sender.
 
 Installation
 ============
