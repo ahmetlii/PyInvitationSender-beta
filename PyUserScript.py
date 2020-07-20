@@ -23,6 +23,7 @@ for template in wikicode.filter_templates():
           listread=wp.page(lister)
           contents=listread.read()
           print ("You agreed.")
+          time.sleep(1)
           print ("Are you sure? It will send the invitations in next step. Please check limitations about invitations, this tool has not liability and guarantee on edits.(y for if you are sure)")
           keyboard.wait("y")
           print("Write the page exactly that you want to invite")
