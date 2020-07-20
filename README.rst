@@ -7,8 +7,8 @@ Installation
 
 To install the latest development (likely unstable) version::
 
-    git clone https://github.com/ahmetlii/mw-api-client.git
-    cd mw-api-client
+    git clone https://github.com/ahmetlii/PyUserScript.git
+    cd PyUserScript
     python setup.py install
 
 Made by ahmetlii, based off https://github.com/Kenny2github/mw-api-client .
