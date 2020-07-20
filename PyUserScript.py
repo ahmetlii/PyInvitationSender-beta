@@ -5,7 +5,7 @@ import mwparserfromhell
 import time
 username = "\n"
 password = "\n"
-link = "/n"
+link = "\n"
 wp = mw.Wiki("https://en.scratch-wiki.info/w/api.php", "PyUserScript version 0.4.1")
 print ("Please write your username, then press enter")
 input (username)
