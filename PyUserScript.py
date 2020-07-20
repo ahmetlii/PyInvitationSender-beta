@@ -22,10 +22,10 @@ for template in wikicode.filter_templates():
           lister=[user+users]
           listread=wp.page(lister)
           contents=listread.read()
-          print ("You agreed.")
-          time.sleep(3)
           print ("Are you sure? It will send the invitations in next step. Please check limitations about invitations, this tool has not liability and guarantee on edits.(y for if you are sure)")
           keyboard.wait("y")
+          print ("You agreed.")
+          time.sleep(3)
           print("Write the page exactly that you want to invite")
           input(link)      
           contents += "==Discussion Invitation== \n {{Discussion Invitation|"+link+"}} \n If you don't want to take invitations automatically, please contact with the [[User talk:"+username+"|"+username+"]] for invitations or the [[User:Ahmetlii|programmer]] for errors."
