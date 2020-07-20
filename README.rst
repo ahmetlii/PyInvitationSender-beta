@@ -1,5 +1,6 @@
-
-Simple multi-message sender.
+PyUserScript
+===========
+Simple and customizable multi-message sender.
 
 Installation
 ============
