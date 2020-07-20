@@ -6,7 +6,6 @@ import time
 username = "\n"
 password = "\n"
 link = "\n"
-yes = "\n"
 wp = mw.Wiki("https://en.scratch-wiki.info/w/api.php", "PyUserScript version 0.4.1")
 print ("Please write your username, then press enter")
 input (username)
@@ -24,8 +23,7 @@ for template in wikicode.filter_templates():
           listread=wp.page(lister)
           contents=listread.read()
           print ("You agreed.")
-          input (yes)
-          time.sleep(1)
+          time.sleep(3)
           print ("Are you sure? It will send the invitations in next step. Please check limitations about invitations, this tool has not liability and guarantee on edits.(y for if you are sure)")
           keyboard.wait("y")
           print("Write the page exactly that you want to invite")
