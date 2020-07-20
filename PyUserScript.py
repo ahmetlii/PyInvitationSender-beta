@@ -30,3 +30,4 @@ for template in wikicode.filter_templates():
           summary = "Sent an invitation with [[User:Ahmetlii/PyUserScript|PyUserScript]]"
           print("Invitations sent by autoscript. Please exit from the terminal.")
           time.sleep(3)
+     break
