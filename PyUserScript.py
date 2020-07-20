@@ -28,7 +28,7 @@ for template in wikicode.filter_templates():
           time.sleep(3)
           print("Write the page exactly that you want to invite")
           input(link)      
-          contents += "==Discussion Invitation== \n {{Discussion Invitation|"+link+"}} \n If you don't want to take invitations automatically, please contact with the [[User talk:"+username+"|"+username+"]] for invitations or the [[User:Ahmetlii|programmer]] for errors."
+          contents += "==Discussion Invitation== \n {{Discussion Invitation|"+link+"}} \n If you don't want to take invitations automatically, please contact with the [[User talk:"+username+"|"+username+"]] for invitations or the [[User talk:Ahmetlii|programmer]] for errors."
           summary = "Sent an invitation with [[User:Ahmetlii/PyUserScript|PyUserScript]]"
           listread.edit(contents, summary)
           print("Invitations sent by autoscript. Please exit from the terminal.")
