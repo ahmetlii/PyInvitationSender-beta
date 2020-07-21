@@ -15,11 +15,12 @@ for template in wikicode.filter_templates():
      if template.name.matches("/item"):
           users = str(template.get(1).value)     
           lister = [user+users]
-          listread = wp.page(lister)
-          contents = listread.read()
-          link = input('Write the page exactly that you want to invite\n')
-          repeater = len(lister)
-          contents += '\n==Discussion Invitation==\n{{Discussion Invitation|'+link+'}}\nThis invitation sent by [[User:Ahmetlii/PyUserScript|PyUserScript]]. If you do not want to take invitations automatically, please contact with the [[User talk:'+username+'|'+username+']] for invitations or the [[User talk:Ahmetlii|programmer]] for errors.'
-          summary = "Sent an invitation with [[User:Ahmetlii/PyUserScript|PyUserScript]]"
-          listread.edit(contents, summary)
-          print("Invitations sent by autoscript. Please exit from the terminal.")
+          link = input('Write the page exactly that you want to invite')
+          for x in lister:
+               listread = wp.page(x)
+               contents = listread.read()
+               repeater = len(lister)
+               contents += '\n==Discussion Invitation==\n{{Discussion Invitation|'+link+'}}\nThis invitation sent by [[User:Ahmetlii/PyUserScript|PyUserScript]]. If you do not want to take invitations automatically, please contact with the [[User talk:'+username+'|'+username+']] for invitations or the [[User talk:Ahmetlii|programmer]] for errors.'
+               summary = "Sent an invitation with [[User:Ahmetlii/PyUserScript|PyUserScript]]"
+               listread.edit(contents, summary)
+               print("Invitations sent by autoscript. Please exit from the terminal.")
