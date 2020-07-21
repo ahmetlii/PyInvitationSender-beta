@@ -8,7 +8,7 @@ username = input('Please write your username, then press enter\n')
 password = input('Password?\n')
 wp.clientlogin(username, password)
 link = input('Write the page exactly that you want to invite\n')
-invitesender = wp.page("Scratch_Wiki:Discussion_Invitation/List")
+invitesender = wp.page("User:Ahmetlii/PyUserScript/whitelist")
 user = 'User talk:'
 wikicode=mwparserfromhell.parse(invitesender)
 item=wikicode.filter_templates(recursive=False)[0]
