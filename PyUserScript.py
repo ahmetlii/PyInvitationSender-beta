@@ -11,7 +11,6 @@ link = input('Write the page exactly that you want to invite\n')
 invitesender = wp.page("Scratch_Wiki:Discussion_Invitation/List")
 user = 'User talk:'
 wikicode=mwparserfromhell.parse(invitesender)
-repeat = 0
 item=wikicode.filter_templates(recursive=False)[0]
 for template in wikicode.filter_templates():
      if template.name.matches("/item"):
