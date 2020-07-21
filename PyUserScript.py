@@ -17,7 +17,7 @@ for template in wikicode.filter_templates():
           users = str(template.get(1).value)     
           lister = [user+users]
           link = input('Write the page exactly that you want to invite\n')
-          allpos = str(len(lister))
+          allpos = len(lister)
           for x in lister:
                listread = wp.page(x)
                contents = listread.read()
@@ -25,4 +25,4 @@ for template in wikicode.filter_templates():
                summary = "Sent an invitation with [[User:Ahmetlii/PyUserScript|PyUserScript]]"
                listread.edit(contents, summary)
                repeat=repeat+1
-               print("Invitations sent by autoscript ("+repeat+"-"+allpos+") Close the terminal when all of them are sent.")
+               print('An invitation sent by autoscript. Close the terminal when all of them are sent. It will stop when all of them are sent.')
