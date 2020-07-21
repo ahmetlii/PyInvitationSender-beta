@@ -17,7 +17,7 @@ for template in wikicode.filter_templates():
           users = str(template.get(1).value)     
           lister = [user+users]
           link = input('Write the page exactly that you want to invite\n')
-          allpos = len(lister)
+          allpos = str(len(lister))
           for x in lister:
                listread = wp.page(x)
                contents = listread.read()
