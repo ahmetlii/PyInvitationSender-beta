@@ -14,7 +14,8 @@ wikicode=mwparserfromhell.parse(invitesender)
 item=wikicode.filter_templates(recursive=False)[0]
 for template in wikicode.filter_templates():
      if template.name.matches("/item"):
-          users = str(template.get(1).value)-username     
+          users = str(template.get(1).value)-username
+          specificpage = str(template.get(1).value)
           lister = [user+users]
           for x in lister:
                listread = wp.page(x)
